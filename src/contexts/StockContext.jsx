@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 export const StockContext = createContext({})
 
-export const StockContextProvider = ({ children }) => {
+export function StockContextProvider({ children }) {
     const [items, setItems] = useState(() => {
         const storedItems = localStorage.getItem('obc-react-stock')
         if (!storedItems) return []
