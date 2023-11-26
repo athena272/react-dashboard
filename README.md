@@ -10,17 +10,21 @@ Este é um projeto de dashboard desenvolvido em React para gerenciar o estoque d
 - Javascript <img align="center" alt="Gui-Js" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> 
 - React <img align="center" alt="Gui-React" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
          
-### Filtros e barra de pesquisa
+### Início
 
-![image](https://github.com/athena272/restaurant-react/assets/58920070/986cf6a6-9d7c-43d1-9770-1c39887be772)
+![image](https://github.com/athena272/react-dashboard/assets/58920070/55aa00b0-4f50-48a6-8a5b-e9823b8e080a)
 
-### Desktop
+### Todos os itens
 
-![image](https://github.com/athena272/restaurant-react/assets/58920070/69a44f11-0a47-4815-894c-92b15db71050)
+![image](https://github.com/athena272/react-dashboard/assets/58920070/6168162c-7443-4fcd-9de2-b1d56d5ef74f)
 
-### Mobile
+### Adicionar item
 
-![image](https://github.com/athena272/restaurant-react/assets/58920070/4a2333be-689a-4315-af89-4cad1a158eab)
+![image](https://github.com/athena272/react-dashboard/assets/58920070/7f86b62d-362f-4746-a6c8-5d169a43c732)
+
+### Detalhe do item
+
+![image](https://github.com/athena272/react-dashboard/assets/58920070/4a3be971-737c-4891-b45c-07c3be14b70b)
 
 ## Link de [Acesso](https://react-dashboard-athena.vercel.app/)
 
