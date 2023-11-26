@@ -3,10 +3,6 @@ import PropTypes from "prop-types"
 
 export const StockContext = createContext({})
 
-StockContextProvider.propTypes = {
-    children: PropTypes.node
-}
-
 export const StockContextProvider = ({ children }) => {
     const [items, setItems] = useState(() => {
         const storedItems = localStorage.getItem('obc-react-stock')
@@ -62,4 +58,8 @@ export const StockContextProvider = ({ children }) => {
             {children}
         </StockContext.Provider>
     )
+}
+
+StockContextProvider.propTypes = {
+    children: PropTypes.node
 }

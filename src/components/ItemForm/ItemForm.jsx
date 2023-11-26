@@ -1,11 +1,7 @@
 import PropTypes from "prop-types"
-import StockItem, { CATEGORIES } from "../../entities/StockItem"
 import { useRef, useState } from "react"
-import useStock from "../hooks/useStock"
-
-ItemForm.propTypes = {
-    itemToUpdate: PropTypes.object
-}
+import StockItem, { CATEGORIES } from "../../entities/StockItem"
+import useStock from "../../hooks/useStock"
 
 const ItemForm = ({ itemToUpdate }) => {
     const defaultItem = {
@@ -95,7 +91,7 @@ const ItemForm = ({ itemToUpdate }) => {
                         onChange={handleChange}
                     >
                         <option disabled value="">Selecione uma categoria...</option>
-                        {CATEGORIES.map((category) => (
+                        {CATEGORIES?.map((category) => (
                             <option
                                 key={category}
                                 value={category}
@@ -123,6 +119,10 @@ const ItemForm = ({ itemToUpdate }) => {
             </button>
         </form>
     )
+}
+
+ItemForm.propTypes = {
+    itemToUpdate: PropTypes.object
 }
 
 export default ItemForm

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import useStock from "../../hooks/useStock";
+import DeleteButton from "../DeleteButton/DeleteButton";
 
 const ItemsTable = () => {
     const { items } = useStock();
@@ -16,7 +17,7 @@ const ItemsTable = () => {
                 </tr>
             </thead>
             <tbody>
-                {items.map((item) => (
+                {items?.map((item) => (
                     <tr key={item.id}>
                         <td>{item.id}</td>
                         <td>{item.name}</td>
@@ -29,6 +30,7 @@ const ItemsTable = () => {
                             <Link to={`/items/${item.id}/update`} className="button is-small">
                                 Atualizar
                             </Link>
+                            <DeleteButton itemId={item.id} itemName={item.name} />
                         </td>
                     </tr>
                 ))}
