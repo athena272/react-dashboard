@@ -1,5 +1,7 @@
+import ItemsTable from "../../../components/ItemsTable/ItemsTable"
+
 const ListItem = () => (
-    <h2>Todos os itens</h2>
+    <ItemsTable />
 )
 
 export default ListItem
