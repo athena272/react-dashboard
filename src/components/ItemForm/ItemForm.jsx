@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
-import StockItem, { CATEGORIES } from "../entities/StockItem"
+import StockItem, { CATEGORIES } from "../../entities/StockItem"
 import { useRef, useState } from "react"
-import useStock from "../hooks/useStock"
+import useStock from "../../hooks/useStock"
 
 const ItemForm = ({ itemToUpdate }) => {
     const defaultItem = {
