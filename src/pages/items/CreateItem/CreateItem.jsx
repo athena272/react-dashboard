@@ -1,5 +1,7 @@
+import ItemForm from "../../../components/ItemForm/ItemForm"
+
 const CreateItem = () => (
-    <h2>Novo item</h2>
+    <ItemForm />
 )
 
 export default CreateItem
