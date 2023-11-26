@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import { StockContextProvider } from "../../contexts/StockContext";
 
 const RootLayout = () => (
     <>
@@ -10,7 +11,9 @@ const RootLayout = () => (
             </nav>
         </header>
         <div>
-            <Outlet />
+            <StockContextProvider>
+                <Outlet />
+            </StockContextProvider>
         </div>
         <footer>
             Feito com React e React Router!
